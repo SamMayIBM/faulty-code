@@ -34,3 +34,16 @@ Once everything is downloaded you should be able to run the following commands a
 `npm i` - Downloads all of the dependencies this code relies on
 
 `npm run test` - Runs the tests (there is a shorthand `npm t` which we typically use to save some typing)
+
+### Getting it working with the other repo
+
+To get both repos working together happily, make sure they're both downloaded onto your laptop in the same directory, then open a command prompt into the folder containing both `serenity-code-enforcement` and `faulty-repo` then run the following:
+
+```
+cd serenity-code-enforcement
+npm link
+cd ..
+cd faulty-repo
+npm link serenity-code-enforcement
+cd ..
+```

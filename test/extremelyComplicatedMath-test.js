@@ -1,5 +1,6 @@
 const { expect } = require('chai')
 const math = require('../src/badExtremelyComplicatedMath')
+const codeEnforcement = require('serenity-code-enforcement')
 
 describe('Checks on the math library', () => {
   describe('add', () => {
@@ -13,7 +14,10 @@ describe('Checks on the math library', () => {
   describe('Code Conformation Checks', () => {
     it('meets the standards of our coding guidelines', () => {
       // This is where your super awesome test goes to test if this repo meets our standards or not!
-      expect.fail('Boom! This should do something but it does not!')
+      expect(codeEnforcement.matchesEnforcementOptions(__dirname, codeEnforcement.presets.defaultPreset)).to.deep.equal({
+        validated: true,
+        failureReasons: []
+      })
     })
   })
 })
