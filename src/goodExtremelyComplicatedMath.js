@@ -1,10 +1,11 @@
+'use strict'
 /*
  * <This would say IBM Confidential>
  * PID: <Some Product Codes>
  * <This would have IBM Copyright information (but this is Open Source)>
  */
 
-'use strict'
+
 
 /**
  * Adds 2 numbers together and returns the sum
@@ -55,6 +56,7 @@ function divide (a, b) {
 function joinStrings (a, b) {
   return `${a} ${b}`
 }
+  
 
 /**
  * Adds a property 'hello' with the value 'world' to an object

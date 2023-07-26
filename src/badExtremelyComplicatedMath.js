@@ -1,23 +1,25 @@
-/**
- * Adds 2 numbers together and returns the sum
- * @param {number} a - The First Number 
- * @param {number} b - The Second Number 
- * @returns {number} - Returns the sum of both of the numbers
- */
+'use strict'
+// /**
+//  * Adds 2 numbers together and returns the sum
+//  * @param {number} a - The First Number 
+//  * @param {number} b - The Second Number 
+//  * @returns {number} - Returns the sum of both of the numbers
+//  */
 function add (a, b) {
   return a + b
 }
 
-function subtract (a, b) {
+const subtract = function (a, b) {
   return a - b
 }
 
-const multiply = function (a, b) {
+function multiply (a, b) {
   return a * b
 }
 
-const divide = (a, b) => {
+function divide (a, b) {
   /* istanbul ignore next */
+  
   return a / b
 }
 
